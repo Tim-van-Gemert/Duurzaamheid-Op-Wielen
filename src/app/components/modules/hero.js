@@ -11,7 +11,8 @@ export default function Hero() {
             <linearGradient id="paint0_linear_25_41" x1="1177.08" y1="977.167" x2="949.321" y2="1596.65" gradientUnits="userSpaceOnUse">
               <stop stop-color="white"/>
               <stop offset="0.445" stop-color="#ADB1FF"/>
-            </linearGradient>
+            </linearGradient> 
+            
           </defs>
         </svg>
       </div>
