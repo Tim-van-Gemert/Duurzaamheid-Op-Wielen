@@ -1,0 +1,20 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .btn-fill {
+    @apply p-4 h-fit w-fit;
+    @apply transition-colors hover:text-[--btn-hover-color] hover:bg-[--btn-hover-background] rounded-full;
+    @apply inline-flex items-center;
+    @apply hover:cursor-pointer;
+    @apply text-[--btn-color] text-sm bg-[--btn-background];
+  }  
+
+  .btn-bare {
+    @apply text-[--btn-color] text-sm h-fit w-fit;
+    @apply transition-colors hover:text-[--btn-hover-color];
+
+  }
+}
+  

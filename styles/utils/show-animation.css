@@ -1,0 +1,19 @@
+@tailwind utilities;
+
+@layer utilities {
+
+    /* The animation code */
+    @keyframes show {
+        from {opacity: 0%; transform: translateY(2%);}
+        to {opacity: 100%; transform: translateY(0);}
+    }
+
+    .show-animation {
+        animation-name: show;
+        animation-duration: 0.2s;
+        animation-timing-function: linear;
+      }
+  
+
+  }
+  

@@ -1,0 +1,10 @@
+@tailwind utilities;
+
+@layer utilities {
+
+    .selected {
+        @apply border-solid border-blue border-[3px] transition-all 
+    }
+  
+  }
+  

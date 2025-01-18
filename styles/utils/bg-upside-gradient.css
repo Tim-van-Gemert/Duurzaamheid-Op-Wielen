@@ -1,0 +1,16 @@
+@tailwind utilities;
+
+@layer utilities {
+
+    .bg-upside-gradient{
+        background: rgb(53,38,245);
+        background: linear-gradient(130deg, rgba(53,38,245,0.5032606792717087) 0%, rgba(238,99,203,0.12230829831932777) 98%);
+    }
+
+
+    .bg-upside-gradient-rev{
+        background: rgb(53,38,245);
+        background: linear-gradient(130deg, rgba(238,99,203,0.12230829831932777) 0%, rgba(53,38,245,0.5032606792717087) 98%);
+    }
+  
+  }

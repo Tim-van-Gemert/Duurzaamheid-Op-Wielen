@@ -1,0 +1,10 @@
+@tailwind utilities;
+
+@layer utilities {
+
+    .hide-card {
+        @apply opacity-0  absolute top-[-200vh]
+    }
+  
+  }
+  

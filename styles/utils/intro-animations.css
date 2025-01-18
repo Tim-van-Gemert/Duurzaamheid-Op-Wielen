@@ -1,0 +1,22 @@
+@tailwind utilities;
+
+@layer utilities {     
+    /* The animation code */
+    @keyframes intro-up {
+        from {top: 0%}
+        to {top: -100%}
+    }
+
+    @keyframes intro-down {
+        from {top: -100%}
+        to {top: 0%}
+    }
+
+    .intro-animation-up {
+        animation: intro-up infinite 50s linear ;
+    }
+
+    .intro-animation-down {
+        animation: intro-down infinite 50s linear ;
+        }
+    }
