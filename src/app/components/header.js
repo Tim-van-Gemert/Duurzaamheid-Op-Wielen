@@ -22,8 +22,8 @@ export default function Header() {
     return (
         <header className='w-full py-6 md;py-10 absolute flex items-center justify-center'>
             {/* Desktop Navigation */}
-            <div className="container hidden nav-bar:flex w-full items-center justify-between">
-                <ul className="flex w-full relative z-10 items-center">
+            <div className="container items-center justify-between hidden w-full nav-bar:flex">
+                <ul className="relative z-10 flex items-center w-full">
                     <div className="flex gap-6">
                         {menuItems.slice(0, -1).map((item, index) => (
                             <li key={item.link + index}>
@@ -44,8 +44,8 @@ export default function Header() {
             </div>
 
             {/* Mobile Navigation */}
-            <div className="container nav-bar:hidden w-full">
-                <div className="flex justify-end items-center">
+            <div className="container w-full nav-bar:hidden">
+                <div className="flex items-center justify-end">
                     {/* Hamburger Button */}
                     <button 
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -63,11 +63,11 @@ export default function Header() {
                     isMenuOpen ? 'translate-x-0' : 'translate-x-full'
                 }`}>
                     <div className="container pt-24">
-                        <ul className="flex flex-col gap-6">
+                        <ul className="flex flex-col gap-4">
                             {menuItems.map((item, index) => (
                                 <li key={item.link + index}>
                                     <a 
-                                        className="btn-bare btn-black-bare text-xl" 
+                                        className="text-2xl " 
                                         href={item.link}
                                         onClick={() => setIsMenuOpen(false)}
                                     >
