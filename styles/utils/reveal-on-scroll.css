@@ -1,0 +1,40 @@
+.reveal-on-scroll {
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1), 
+              opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  opacity: 0;
+  transform: translateY(30px);
+  will-change: transform, opacity;
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Remove animation for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.reveal-on-scroll.reveal-on-scroll-without-y{
+  transition: transform 0s ease-out, opacity 0s ease-out;
+  opacity: 0;
+}
+
+.reveal-on-scroll.reveal-on-scroll-without-y.revealed {
+  transition: transform 0s ease-out, opacity 0s ease-out;
+  animation: fadeInContentWithoutY 500ms forwards cubic-bezier(0, 0, 0.3, 1);
+}
+
+@keyframes fadeInContentWithoutY {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -20,7 +20,7 @@ export default function Header() {
     ];
 
     return (
-        <header className='w-full py-6 md;py-10 absolute flex items-center justify-center'>
+        <header className='absolute flex items-center justify-center w-full py-6 md:py-10 '>
             {/* Desktop Navigation */}
             <div className="container items-center justify-between hidden w-full nav-bar:flex">
                 <ul className="relative z-10 flex items-center w-full">
@@ -65,9 +65,9 @@ export default function Header() {
                     <div className="container pt-24">
                         <ul className="flex flex-col gap-4">
                             {menuItems.map((item, index) => (
-                                <li key={item.link + index}>
+                                <li className='' key={item.link + index}>
                                     <a 
-                                        className="text-2xl " 
+                                        className="block w-full text-2xl reveal-on-scroll text-end" 
                                         href={item.link}
                                         onClick={() => setIsMenuOpen(false)}
                                     >
