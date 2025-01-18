@@ -67,7 +67,7 @@ export default function Header() {
                             {menuItems.map((item, index) => (
                                 <li className='' key={item.link + index}>
                                     <a 
-                                        className="block w-full text-2xl reveal-on-scroll text-end" 
+                                        className="block w-full text-2xl reveal-on-scroll" 
                                         href={item.link}
                                         onClick={() => setIsMenuOpen(false)}
                                     >
