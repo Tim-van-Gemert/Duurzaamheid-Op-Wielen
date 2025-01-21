@@ -48,6 +48,27 @@ const fontSize = {
     lineHeight: '40px',
   }],
 
+  'h2': ['48px', {
+    fontFamily: 'serif',
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: '54px',
+  }],
+
+  'h2-md': ['32px', {
+    fontFamily: 'serif',
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: '48px',
+  }],
+
+  'h2-sm': ['28px', {
+    fontFamily: 'serif',
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: '32px',
+  }],
+
   // 'h1-sm': ['70px', {
   //   fontFamily: 'sans',
   //   fontStyle: 'normal',

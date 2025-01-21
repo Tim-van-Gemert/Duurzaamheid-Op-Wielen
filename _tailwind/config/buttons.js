@@ -18,7 +18,7 @@ const buttons = {
     'black-bare': {
       'color': colors.black,
       'hover': {
-        'color': colors.pink.DEFAULT,
+        'color': colors.black.DEFAULT,
       },
     },
 
