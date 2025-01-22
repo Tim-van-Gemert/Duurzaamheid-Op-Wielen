@@ -5,8 +5,11 @@ import VideoSection from './components/modules/video-section';
 
 export default function Home() {
   return (
-    <main className="flex flex-col h-full overflow-hidden">
+    <main className="flex flex-col h-full">
+      <div className="overflow-hidden"> 
       <Hero />
+
+      </div>
     
 
       <VideoSection 

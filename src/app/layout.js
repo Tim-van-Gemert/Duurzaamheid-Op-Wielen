@@ -11,11 +11,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <head>
         <link rel="stylesheet" href='https://use.typekit.net/zsn8hgp.css'/>
       </head>
-      <body className='relative body'>
+      <body className='relative body '>
         <ClientWrapper>
           <RevealOnScroll />
           <Header />
