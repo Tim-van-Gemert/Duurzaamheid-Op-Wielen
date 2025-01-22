@@ -8,11 +8,10 @@ export default function Home() {
     <main className="flex flex-col h-full">
       <div className="overflow-hidden"> 
       <Hero />
-
       </div>
     
-
-      <div id="interviews">
+      {/* uncomment when content is ready */}
+      {/* <div id="interviews">
       <VideoSection 
           thumbnailUrl="/images/interview_annie-marie_rakhorst.jpeg"
           videoUrl="https://www.youtube.com/watch?v=BVdHrTfO2PE"
@@ -30,7 +29,7 @@ export default function Home() {
           className="mt-[120px] md:mt-[100px] lg:mt-[180px]"
           isReversed={true}
         />
-      </div>
+      </div> */}
 
 
     </main>

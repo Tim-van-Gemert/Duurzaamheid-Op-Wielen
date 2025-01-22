@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
           <RevealOnScroll />
           <Header />
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </ClientWrapper>
         <Analytics />
       </body>
