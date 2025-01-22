@@ -15,8 +15,8 @@ export default function VideoSection({
       {/* Video Section */}
       <div className={`order-first md:order-none col-span-12 md:col-span-6 relative ${
         isReversed ? 'md:col-start-7 md:row-start-1' : ''
-      } before:absolute before:flex before:w-[90%] before:h-[90%] before:top-[-16px] md:before:top-[-32px] before:from-[#ADB1FF] before:via-[#ADB1FF] before:to-white before:opacity-20 before:z-[-1] before:rounded-3xl before:bg-gradient-to-br ${
-        isReversed ? 'before:right-[-16px] md:before:right-[-32px]' : 'before:left-[-16px] md:before:left-[-32px]'
+      } md:before:absolute md:before:flex md:before:w-[90%] md:before:h-[90%] md:before:top-[-32px] before:from-[#ADB1FF] before:via-[#ADB1FF] before:to-white before:opacity-20 before:z-[-1] before:rounded-3xl before:bg-gradient-to-br ${
+        isReversed ? 'md:before:right-[-32px]' : 'md:before:left-[-32px]'
       } reveal-on-scroll`}>
         <Video 
           thumbnailUrl={thumbnailUrl}
