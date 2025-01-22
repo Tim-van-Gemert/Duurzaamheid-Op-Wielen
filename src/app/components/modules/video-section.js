@@ -13,7 +13,11 @@ export default function VideoSection({
   return (
     <section className={`container relative w-full grid grid-cols-12 gap-6 items-center ${className}`}>
       {/* Video Section */}
-      <div className={`mt-8 md:mt-0 order-2 md:order-1 col-span-12 md:col-span-6 relative before:absolute before:flex before:w-[90%] before:h-[90%] before:top-[-16px] md:before:top-[-32px] before:from-[#ADB1FF] before:via-[#ADB1FF] before:to-white before:opacity-20 before:z-[-1] before:rounded-3xl reveal-on-scroll md:row-start-1 ${videoOnRight ? 'md:col-start-1 before:bg-gradient-to-br before:left-[-16px] md:before:left-[-32px]' : 'md:col-start-7 before:bg-gradient-to-bl before:right-[-16px] md:before:right-[-32px]'}`}>
+      <div className={`col-span-12 md:col-span-6 relative order-2 md:order-none before:absolute before:flex before:w-[90%] before:h-[90%] before:top-[-16px] md:before:top-[-32px] before:from-[#ADB1FF] before:via-[#ADB1FF] before:to-white before:opacity-20 before:z-[-1] before:rounded-3xl reveal-on-scroll ${
+        videoOnRight 
+          ? 'md:row-start-1 before:bg-gradient-to-br before:left-[-16px] md:before:left-[-32px]' 
+          : 'order-2 md:order-1 md:col-start-7 before:bg-gradient-to-bl before:right-[-16px] md:before:right-[-32px]'
+      }`}>
         <Video 
           thumbnailUrl={thumbnailUrl}
           videoUrl={videoUrl}
@@ -22,7 +26,9 @@ export default function VideoSection({
       </div>
       
       {/* Text Section */}
-      <div className={`order-1 md:order-2 col-span-12 md:col-span-5 h-full flex flex-col justify-center items-start md:row-start-1 ${videoOnRight ? 'md:col-start-8' : 'md:col-start-1'}`}>
+      <div className={`col-span-12 md:col-span-5 h-full flex flex-col justify-center items-start order-1 md:order-none mb-6 md:mb-0 ${
+        videoOnRight ? 'md:col-start-8' : 'order-1 md:order-2 '
+      }`}>
         <h2 className="text-h2-sm md:text-h2-md lg:text-h2 reveal-on-scroll">
           {title}
         </h2>

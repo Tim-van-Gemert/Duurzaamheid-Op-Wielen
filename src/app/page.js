@@ -15,7 +15,7 @@ export default function Home() {
           videoUrl="https://www.youtube.com/watch?v=BVdHrTfO2PE"
           title="Interview met een duurzame foodtruck eigenaar"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
-          className="mt-[90px] md:mt-[100px] lg:mt-[180px]"
+          className="mt-[120px] md:mt-[100px] lg:mt-[180px]"
         />
 
         <VideoSection 
@@ -23,7 +23,7 @@ export default function Home() {
           videoUrl="https://www.youtube.com/watch?v=BVdHrTfO2PE"
           title="Interview met Annie-Marie Rakhorst"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
-          className="mt-[90px] md:mt-[100px] lg:mt-[200px]"
+          className="mt-[120px] md:mt-[100px] lg:mt-[200px]"
           videoOnRight={false}
         />
       </section>
