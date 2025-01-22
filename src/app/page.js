@@ -8,15 +8,7 @@ export default function Home() {
     <main className="flex flex-col h-full min-h-screen overflow-hidden">
       <Hero />
       
-
       <section id="interviews" className="flex flex-col">
-        <VideoSection 
-          thumbnailUrl="/images/interview_vroemvroemkoffie.webp"
-          videoUrl="https://www.youtube.com/watch?v=BVdHrTfO2PE"
-          title="Interview met een duurzame foodtruck eigenaar"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
-          className="mt-[120px] md:mt-[100px] lg:mt-[180px]"
-        />
 
         <VideoSection 
           thumbnailUrl="/images/interview_annie-marie_rakhorst.jpeg"
@@ -26,8 +18,16 @@ export default function Home() {
           className="mt-[120px] md:mt-[100px] lg:mt-[200px]"
           videoOnRight={false}
         />
-      </section>
+        
+        {/* <VideoSection 
+          thumbnailUrl="/images/interview_vroemvroemkoffie.webp"
+          videoUrl="https://www.youtube.com/watch?v=BVdHrTfO2PE"
+          title="Interview met een duurzame foodtruck eigenaar"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+          className="mt-[120px] md:mt-[100px] lg:mt-[180px]"
+        /> */}
 
+      </section>
 
     </main>
   );
