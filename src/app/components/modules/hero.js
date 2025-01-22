@@ -4,7 +4,7 @@ import React from 'react';
 export default function Hero() {
   return (
     <section id='introductie' className="container relative w-full grid grid-cols-12 gap-6 mt-[90px] md:mt-[100px] lg:mt-[196px] z-30 ">
-      <div className="absolute left-[-700px] z-[-10] top-[-1475px] md:top-[-1500px] inset-0">
+      <div className="absolute left-[-700px] z-[-10] top-[-1550px] md:top-[-1500px] inset-0">
         <svg width="2869" height="1973" viewBox="0 0 2869 1973" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M2789.62 279.541C2841.77 288.885 2876.47 338.732 2867.12 390.878V390.878C2680.06 1434.84 1682.11 2129.5 638.147 1942.44L102.19 1846.4C35.2585 1834.41 -9.27782 1770.43 2.7153 1703.5L160.427 823.338C257.739 280.255 776.882 -81.1126 1319.96 16.1998L2789.62 279.541Z" fill="url(#paint0_linear_25_41)" fillOpacity="0.2"/>
           <defs>
@@ -16,7 +16,7 @@ export default function Hero() {
         </svg>
       </div>
 
-      <div className="absolute left-[-700px] z-[-10] top-[-1400px] lg:top-[-1400px] inset-0">
+      <div className="absolute left-[-700px] z-[-10] top-[-1450px] lg:top-[-1400px] inset-0">
         <svg width="2869" height="1973" viewBox="0 0 2869 1973" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2789.62 279.541C2841.77 288.885 2876.47 338.732 2867.12 390.878V390.878C2680.06 1434.84 1682.11 2129.5 638.147 1942.44L102.19 1846.4C35.2585 1834.41 -9.27782 1770.43 2.7153 1703.5L160.427 823.338C257.739 280.255 776.882 -81.1126 1319.96 16.1998L2789.62 279.541Z" fill="url(#paint0_linear_25_41)" fillOpacity="0.1"/>
             <defs>

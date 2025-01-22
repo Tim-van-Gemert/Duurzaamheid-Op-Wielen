@@ -12,6 +12,7 @@ export default function Home() {
       </div>
     
 
+      <div id="interviews">
       <VideoSection 
           thumbnailUrl="/images/interview_annie-marie_rakhorst.jpeg"
           videoUrl="https://www.youtube.com/watch?v=BVdHrTfO2PE"
@@ -28,8 +29,8 @@ export default function Home() {
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
           className="mt-[120px] md:mt-[100px] lg:mt-[180px]"
           isReversed={true}
-    
         />
+      </div>
 
 
     </main>
