@@ -6,7 +6,7 @@ import ClientWrapper from './components/ClientWrapper'
 import RevealOnScroll from './components/RevealOnScroll'
 
 export const metadata = {
-  title: 'Tessa website',
+  title: 'Duurzaamheid op wielen',
 }
 
 export default function RootLayout({ children }) {
