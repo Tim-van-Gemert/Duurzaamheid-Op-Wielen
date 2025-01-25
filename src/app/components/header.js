@@ -6,36 +6,27 @@ export default function Header() {
 
     const menuItems = [
         {
-            label:"Interviews",
-            link:'#interviews'
+            label: "Interviews",
+            link: '#interviews'
         },
         {
-            label:'Contact',
-            link:'#contact'
+            label: 'Contact',
+            link: '#contact'
         },
     ];
 
     return (
         <header className='absolute z-50 flex items-center justify-center w-full py-6 md:py-10'>
             {/* Desktop Navigation */}
-            <div className="container items-center justify-between hidden w-full nav-bar:flex">
-                <ul className="relative z-10 flex items-center w-full gap-6">
-                    <div className="flex gap-6">
-                        {menuItems.slice(0, -1).map((item, index) => (
-                            <li key={item.link + index}>
-                                <a className="btn-bare btn-black-bare text-md relative before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[1px] before:bg-black before:transition-all hover:before:w-full hover:before:left-0" href={item.link}>
-                                    {item.label}
-                                </a>
-                            </li>
-                        ))}
-                    </div>
-                    <div className="">
-                        <li>
-                            <a className="btn-bare btn-black-bare text-md relative before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[1px] before:bg-black before:transition-all hover:before:w-full hover:before:left-0" href={menuItems[menuItems.length - 1].link}>
-                                {menuItems[menuItems.length - 1].label}
+            <div className="container items-center justify-start hidden w-full nav-bar:flex">
+                <ul className="relative z-10 flex items-center gap-6 w-fit">
+                    {menuItems.map((item, index) => (
+                        <li key={item.link + index}>
+                            <a className="btn-bare reveal-on-scroll btn-black-bare text-serif text-md relative before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[1px] before:bg-black before:transition-all hover:before:w-full hover:before:left-0" href={item.link}>
+                                {item.label}
                             </a>
                         </li>
-                    </div>
+                    ))}
                 </ul>
             </div>
 

@@ -43,7 +43,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="col-span-12 md:col-span-6 grid grid-cols-7 md:grid-cols-6 relative mt-6 md:mt-0 lg:mt-[-91px]">
+      <div className="col-span-12 md:col-span-6 grid grid-cols-7 md:grid-cols-6 relative mt-6 md:mt-0 lg:mt-[-91px] ">
         <div className="col-span-3 col-start-5  md:col-start-4 row-start-1 md:min-w-[230px] lg:min-w-[322px]  aspect-[2/3] rounded-3xl overflow-hidden reveal-on-scroll shadow-lg">
           <img src="/images/interview_annie-marie_rakhorst.jpeg" alt="Interview met Anne-Marie Rakhorst" className="object-cover object-center w-full h-full " />
         </div>

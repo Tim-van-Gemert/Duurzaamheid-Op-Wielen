@@ -2,7 +2,7 @@
 import React from "react";
 import Hero from './components/modules/hero';
 import VideoSection from './components/modules/video-section';
-
+import Contact from './components/modules/contact';
 export default function Home() {
   return (
     <main className="flex flex-col h-full">
@@ -32,7 +32,7 @@ export default function Home() {
         />
       </div>
 
-
+      <Contact />
     </main>
   );
 }
