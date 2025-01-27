@@ -11,7 +11,7 @@ export default function Header() {
         },
         {
             label: 'Contact',
-            link: '#contact'
+            link: 'mailto:tessa.vg@hotmail.com'
         },
     ];
 

@@ -3,7 +3,7 @@
 export default function Footer() {
 
     return (
-        <footer className="mt-[100px]">
+        <footer className="mt-[00px]">
             <div className="container">
             </div>
         </footer>
