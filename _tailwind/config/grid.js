@@ -5,7 +5,7 @@ const maxGrid = '1440px';
 const screens = {
   'xs': '414px',
   'mobile': {'max': '639px'},
-  'sm': '640px',
+  'sm': '400px',
   'md': '768px',
   'lg': '1024px',
   'nav-drawer': {'max': '899px'},

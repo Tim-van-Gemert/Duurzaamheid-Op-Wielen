@@ -22,7 +22,7 @@ export default function Contact() {
           </div>
         </a>
         </div>
-        <div className='flex flex-col mt-12 md:mt-10 reveal-on-scroll'>
+        <div className='mt-12 sm:flex sm:flex-col md:mt-10 reveal-on-scroll'>
           <span>Heeft u vragen? stuur gerust een mailtje naar: </span><a href="mailto:tessa.vg@hotmail.com" className="text-[#ADB1FF]">tessa.vg@hotmail.com</a>
         </div>
       </div>
