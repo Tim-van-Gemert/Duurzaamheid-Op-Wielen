@@ -14,6 +14,18 @@ const buttons = {
       }
     },
 
+    'smoke': {
+      'background': colors.smoke.DEFAULT,
+      'color': colors.black,
+      'border': colors.black,
+      'hover': {
+        'background': colors.black,
+        'color': colors.white,
+        'border': colors.black,
+      }
+    },
+
+
 
     'black-bare': {
       'color': colors.black,
