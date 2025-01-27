@@ -12,7 +12,7 @@ export default function Home() {
     
       <div id="interviews">
       <VideoSection 
-          thumbnailUrl="/images/interview_annie-marie_rakhorst.jpeg"
+          thumbnailUrl="/images/interview_anne-marie_rakhorst.jpeg"
           videoUrl="https://youtu.be/BwZjBTQQxUE?si=3wurdmgkC0dceght"
           title="Interview met Anne-Marie Rakhorst"
           description="Anne-Marie Rakhorst is ondernemer, inversteerder en voorloper in duurzaamheid en innovatie. Als oprichtster van duurzaamheid.nl en auteur stimuleert ze bewustwording en versnelt duurzame oplossingen."
