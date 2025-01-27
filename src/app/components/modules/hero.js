@@ -44,7 +44,7 @@ export default function Hero() {
       </div>
       <div className="col-span-12 md:col-span-6 grid grid-cols-7 md:grid-cols-6 relative mt-6 md:mt-0 lg:mt-[-91px] ">
         <div className="col-span-3 col-start-5  md:col-start-4 row-start-1 md:min-w-[230px] lg:min-w-[322px]  aspect-[2/3] rounded-3xl overflow-hidden reveal-on-scroll shadow-lg">
-          <img src="/images/interview_annie-marie_rakhorst.jpeg" alt="Interview met Anne-Marie Rakhorst" className="object-cover object-center w-full h-full " />
+          <img src="/images/interview_anne-marie_rakhorst.jpeg" alt="Interview met Anne-Marie Rakhorst" className="object-cover object-center w-full h-full " />
         </div>
         <div className="col-span-3 col-start-3 md:col-start-2 row-start-1  md:min-w-[230px] lg:min-w-[322px] relative z-10 aspect-[2/3] rounded-3xl overflow-hidden mt-20 sm:mt-32 md:mt-[140px] lg:mt-[179px] reveal-on-scroll">
           <img src="/images/interview_vroemvroemkoffie.webp" alt="Interview met Vroemvroemkoffie" className="object-cover object-right w-full h-full" />
