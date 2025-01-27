@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Contact() {
   return (
-    <section id="contact" className="container relative w-full grid grid-cols-12 gap-6 mt-[120px] md:mt-[140px] lg:mt-[200px] mb-[120px]">
+    <section id="contact" className="container relative w-full grid grid-cols-12 gap-6 mt-[120px] md:mt-[140px] lg:mt-[200px] mb-[120px] reveal-on-scroll">
       {/* Content */}
       <div className="col-span-12 text-center reveal-on-scroll">
         <h2 className="text-h2-sm md:text-h1-md lg:text-h1-md">We waarderen jouw feedback!</h2>
