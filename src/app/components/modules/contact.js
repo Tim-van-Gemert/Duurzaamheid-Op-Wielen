@@ -8,7 +8,7 @@ export default function Contact() {
       <div className="col-span-12 text-center reveal-on-scroll">
         <h2 className="text-h2-sm md:text-h1-md lg:text-h1-md">We waarderen jouw feedback!</h2>
         <p className="max-w-2xl mx-auto mt-6 text-sm md:text-base">
-            Er staat een Google Formulier klaar voor jouw feedback. Jouw mening is ontzettend waardevol en helpt ons om de content nog beter af te stemmen op jouw behoeften. Alvast bedankt voor het invullen!
+            Er staat een Google Formulier voor je klaar om je feedback te geven. Jouw mening is ontzettend waardevol en helpt ons om de content nog beter af te stemmen op jouw behoeften. Alvast hartelijk dank voor het invullen!
             <br />
             <br />
         </p>

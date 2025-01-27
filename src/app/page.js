@@ -16,7 +16,7 @@ export default function Home() {
           videoUrl="https://youtu.be/BwZjBTQQxUE?si=3wurdmgkC0dceght"
           title="Interview met Anne-Marie Rakhorst"
           description="Anne-Marie Rakhorst is ondernemer, inversteerder en voorloper in duurzaamheid en innovatie. Als oprichtster van duurzaamheid.nl en auteur stimuleert ze bewustwording en versnelt duurzame oplossingen."
-          className="mt-[180px] md:mt-[100px] lg:mt-[200px]"
+          className="mt-[140px] md:mt-[100px] lg:mt-[200px]"
           isReversed={false}
         />
         
