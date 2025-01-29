@@ -35,7 +35,7 @@ export default function Home() {
           videoUrl="https://www.youtube.com/watch?v=UsXGtXZoPiQ"
           title="Interview met Willem Schellingerhoud"
           description="Willem Schellingerhoud, logistiek adviseur bij de gemeente Rotterdam, geeft inzicht in emissiezones en helpt foodtruckeigenaren met praktische mogelijkheden om zich hierop aan te passen en voor te bereiden."
-          className="mt-[140px] md:mt-[100px] lg:mt-[200px]"
+          className="mt-[140px] md:mt-[100px] lg:mt-[200px] [&_img]:object-top"
           objectPosition="top"
           isReversed={false}
         />
