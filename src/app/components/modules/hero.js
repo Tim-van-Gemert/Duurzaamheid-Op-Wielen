@@ -29,27 +29,27 @@ export default function Hero() {
 
 
       <div className="flex flex-col col-span-12 md:col-span-6 ">
-        <h1 className="mb-8 text-h1-sm md:text-h1-md lg:text-h1 reveal-on-scroll">Duurzaamheid in de foodtruck sector</h1>
+        <h1 className="mb-8 text-h1-sm md:text-h1-md lg:text-h1 reveal-on-scroll">Er word nog gewerkt aan deze website!</h1>
         <p className="text-sm md:text-base reveal-on-scroll">
-            Steeds meer foodtruckeigenaren ontdekken de voordelen van duurzaam ondernemen. Of je nu net begint of al jaren onderweg bent, hier vind je inspiratie en kennis om jouw foodtruck groener te maken!
+            kom later terug voor de interviews!
         </p>
-        <a href="#interviews" className="flex justify-start items-center w-fit mt-10 md:mt-[52px] group reveal-on-scroll">
+        {/* <a href="#interviews" className="flex justify-start items-center w-fit mt-10 md:mt-[52px] group reveal-on-scroll">
           <span className="text-xs btn-fill btn-white group-hover:bg-black group-hover:text-white">Bekijk de interviews</span>
           <div className="btn-fill btn-white h-fit group-hover:bg-black"> 
             <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fillRule="evenodd" clipRule="evenodd" d="M8.99978 0.0429077V14.1287L14.4998 8.62871L15.914 10.0429L7.99978 17.9571L0.0855713 10.0429L1.49979 8.62871L6.99978 14.1287V0.0429077H8.99978Z" className="group-hover:fill-white fill-black"/>
             </svg>
           </div>
-        </a>
+        </a> */}
       </div>
-      <div className="col-span-12 md:col-span-6 grid grid-cols-7 md:grid-cols-6 relative mt-6 md:mt-0 lg:mt-[-91px] ">
+      {/* <div className="col-span-12 md:col-span-6 grid grid-cols-7 md:grid-cols-6 relative mt-6 md:mt-0 lg:mt-[-91px] ">
         <div className="col-span-3 col-start-5  md:col-start-4 row-start-1 md:min-w-[230px] lg:min-w-[322px]  aspect-[2/3] rounded-3xl overflow-hidden reveal-on-scroll shadow-lg">
           <img src="/images/interview_anne-marie_rakhorst.jpeg" alt="Interview met Anne-Marie Rakhorst" className="object-cover object-center w-full h-full " />
         </div>
         <div className="col-span-3 col-start-3 md:col-start-2 row-start-1  md:min-w-[230px] lg:min-w-[322px] relative z-10 aspect-[2/3] rounded-3xl overflow-hidden mt-20 sm:mt-32 md:mt-[140px] lg:mt-[179px] reveal-on-scroll">
           <img src="/images/interview_vroemvroemkoffie.webp" alt="Interview met Vroemvroemkoffie" className="object-cover object-right w-full h-full" />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 } 
