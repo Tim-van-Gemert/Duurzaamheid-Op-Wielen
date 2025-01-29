@@ -26,7 +26,7 @@ export default function InitiativesGrid() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-1 group reveal-on-scroll">
                   <ArrowIcon />
-                  <span className=''>Opwegnaarzero.nl - Alles over emissiezonnes en overstap naar een duurzamer voertuig</span>
+                  <span className=''><a href="https://opwegnaarzes.nl" target="_blank" className="relative before:absolute before:bottom-0 before:w-full before:h-[1px] before:bg-black before:transition-all hover:before:w-1/2 hover:before:left-1/4 before:left-0 w-fit">opwegnaarzes.nl</a> - Alles over emissiezonnes en overstap naar een duurzamer voertuig</span>
                 </li>
                 <li className="flex items-start gap-1 group reveal-on-scroll">
                   <ArrowIcon />

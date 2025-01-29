@@ -21,7 +21,7 @@ export default function Insights() {
                 <div className="relative z-10 grid items-center grid-cols-12 gap-6">
                     <div className="col-span-12 md:col-span-4 lg:col-span-4 aspect-[2/3] order-2 md:order-1">   
                         <div className="relative z-10 before:absolute before:flex before:w-[90%] before:h-[90%] md:before:bottom-[-24px] md:before:left-[-24px] before:bottom-[-12px] before:left-[-12px] md:before:bg-[#ADB1FF] before:opacity-[30%] before:z-[-1] before:rounded-3xl reveal-on-scroll">
-                        <img src="/images/anne-marie-rakhorst.png" className="object-cover object-right w-full h-full" />
+                        <img src="/images/tessa-en-anne.jpg" className="object-cover object-center w-full h-full aspect-[2/3] rounded-3xl" />
                         </div>
                     </div>
                     <div className="order-1 col-span-12 md:col-span-8 lg:col-span-7 lg:col-start-6 md:order-2">
@@ -143,7 +143,7 @@ export default function Insights() {
                             </li>
                             <li className="flex items-start gap-1 group reveal-on-scroll">
                                 <ArrowIcon bgColor="white" />
-                                <span>Belangrijke bronnen: <br/>Websites zoals <a href="https://logistiek010.nl/" target="_blank" className="underline">logistiek010.nl</a> en <a href="https://opwegnaarzes.nl/" target="_blank" className="underline">opwegnaarzes.nl</a> geven duidelijkheid over welke voertuigen nog toegang hebben tot emissiezones.</span>
+                                <span>Belangrijke bronnen: <br/>Websites zoals <a href="https://logistiek010.nl/" target="_blank" className="relative before:absolute before:bottom-0 before:w-full before:h-[1px] before:bg-black before:transition-all hover:before:w-1/2 hover:before:left-1/4 before:left-0 w-fit">logistiek010.nl</a> en <a href="https://opwegnaarzes.nl/" target="_blank" className="relative before:absolute before:bottom-0 before:w-full before:h-[1px] before:bg-black before:transition-all hover:before:w-1/2 hover:before:left-1/4 before:left-0 w-fit">opwegnaarzes.nl</a> geven duidelijkheid over welke voertuigen nog toegang hebben tot emissiezones.</span>
                             </li>
                             <li className="flex items-start gap-1 group reveal-on-scroll">
                                 <ArrowIcon bgColor="white" />

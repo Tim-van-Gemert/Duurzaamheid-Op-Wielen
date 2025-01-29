@@ -94,7 +94,7 @@ export default function Header() {
                             {menuItems.map((item, index) => (
                                 <li className='' key={item.link + index}>
                                     <a 
-                                        className={`block w-full text-2xl reveal-on-scroll relative before:absolute before:bottom-0  before:w-0 before:h-[1px] before:bg-black before:transition-all hover:before:w-full hover:before:left-0 active:text-blue active:before:bg-blue`}
+                                        className={`block w-fit text-2xl reveal-on-scroll relative before:absolute before:bottom-0  before:w-0 before:h-[1px] before:bg-black before:transition-all hover:before:w-full hover:before:left-0 active:text-blue active:before:bg-blue`}
                                         href={item.link}
                                         onClick={() => setIsMenuOpen(false)}
                                     >
