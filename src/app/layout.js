@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/react"
 import ClientWrapper from './components/ClientWrapper'
 import RevealOnScroll from './components/RevealOnScroll'
 import GoogleAnalytics from './components/GoogleAnalytics'
-import Hero from './components/modules/hero'
+
 export const metadata = {
   title: 'Duurzaamheid Op Wielen',
 }
@@ -20,10 +20,9 @@ export default function RootLayout({ children }) {
         <GoogleAnalytics />
         <ClientWrapper>
           <RevealOnScroll />
-          <Hero/>
-          {/* <Header />
-          {children} */}
-          {/* <Footer /> */}
+          {/* <Header /> */}
+          {children}
+           {/* <Footer /> */}
         </ClientWrapper>
         <Analytics />
       </body>

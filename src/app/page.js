@@ -6,11 +6,11 @@ import Contact from './components/modules/contact';
 export default function Home() {
   return (
     <main className="flex flex-col h-full">
-      <div className="overflow-hidden"> 
+      <div className="overflow-hidden min-h-[100vh]"> 
       <Hero />
       </div>
     
-      <div id="interviews">
+      {/* <div id="interviews">
       <VideoSection 
           thumbnailUrl="/images/interview_anne-marie_rakhorst.jpeg"
           videoUrl="https://youtu.be/BwZjBTQQxUE?si=3wurdmgkC0dceght"
@@ -28,9 +28,9 @@ export default function Home() {
           className="mt-[120px] md:mt-[100px] lg:mt-[180px]"
           isReversed={true}
         />
-      </div>
+      </div> */}
 
-      <Contact />
+      {/* <Contact /> */}
     </main>
   );
 }
