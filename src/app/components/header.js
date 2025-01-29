@@ -1,13 +1,27 @@
 "use client";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const pathname = usePathname();
 
     const menuItems = [
         {
+            label: "Home",
+            link: '/'
+        },
+        {
+            label: "Inzichten",
+            link: '/inzichten'
+        },
+        {
             label: "Interviews",
-            link: '#interviews'
+            link: '/#interviews'
+        },
+        {
+            label: "Duurzame initiatieven",
+            link: '/duurzame-initiatieven'
         },
         {
             label: 'Contact',
@@ -15,14 +29,27 @@ export default function Header() {
         },
     ];
 
+    const isActive = (link) => {
+        if (link.startsWith('mailto:')) return false;
+        if (link.includes('#')) {
+            return pathname === '/' && window.location.hash === link.split('#')[1];
+        }
+        return pathname === link;
+    };
+
     return (
-        <header className='absolute z-50 flex items-center justify-center w-full py-6 md:py-10'>
+        <header className='absolute z-50 flex items-center justify-center w-full py-6 md:py-10 '>
             {/* Desktop Navigation */}
             <div className="container items-center justify-start hidden w-full nav-bar:flex">
                 <ul className="relative z-10 flex items-center gap-6 w-fit">
                     {menuItems.map((item, index) => (
                         <li key={item.link + index}>
-                            <a className="btn-bare reveal-on-scroll btn-black-bare text-serif text-md relative before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[1px] before:bg-black before:transition-all hover:before:w-full hover:before:left-0" href={item.link}>
+                            <a 
+                                className={`btn-bare btn-black-bare text-serif text-md relative before:absolute before:bottom-0 before:w-0 before:h-[1px] before:bg-black before:transition-all hover:before:w-full hover:before:left-0 ${
+                                    isActive(item.link) ? 'before:w-full before:left-0' : 'before:left-1/2'
+                                }`} 
+                                href={item.link}
+                            >
                                 {item.label}
                             </a>
                         </li>
@@ -54,7 +81,7 @@ export default function Header() {
                             {menuItems.map((item, index) => (
                                 <li className='' key={item.link + index}>
                                     <a 
-                                        className="block w-full text-2xl reveal-on-scroll relative before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[1px] before:bg-black before:transition-all hover:before:w-full hover:before:left-0 active:text-blue active:before:bg-blue" 
+                                        className={`block w-full text-2xl reveal-on-scroll relative before:absolute before:bottom-0  before:w-0 before:h-[1px] before:bg-black before:transition-all hover:before:w-full hover:before:left-0 active:text-blue active:before:bg-blue`}
                                         href={item.link}
                                         onClick={() => setIsMenuOpen(false)}
                                     >

@@ -12,6 +12,7 @@
 @import "../../styles/components/shine";
 @import "../../styles/section-spacing";
 @import "../../styles/utils/reveal-on-scroll";
+@import "../../styles/components/swiper-custom";
 
 :root {
   /* Global colors */

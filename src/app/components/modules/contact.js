@@ -22,8 +22,14 @@ export default function Contact() {
           </div>
         </a>
         </div>
-        <div className='mt-12 sm:flex sm:flex-col md:mt-10 reveal-on-scroll'>
-          <span>Heeft u vragen? stuur gerust een mailtje naar: </span><a href="mailto:tessa.vg@hotmail.com" className="text-[#ADB1FF]">tessa.vg@hotmail.com</a>
+        <div className='items-center justify-center mt-12 sm:flex sm:flex-col md:mt-10 reveal-on-scroll'>
+          <span>Heeft u vragen? stuur gerust een mailtje naar: </span>
+          <a 
+            href="mailto:tessa.vg@hotmail.com" 
+            className="text-[#ADB1FF] relative before:absolute before:bottom-0 before:w-0 before:h-[1px] before:bg-[#ADB1FF] before:transition-all hover:before:w-full hover:before:left-0 before:left-1/2 w-fit"
+          >
+            tessa.vg@hotmail.com
+          </a>
         </div>
       </div>
 
