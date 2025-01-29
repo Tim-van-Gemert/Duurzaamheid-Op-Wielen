@@ -31,7 +31,7 @@ export default function HeroTwo() {
       <div className="flex flex-col col-span-12 md:col-span-6 ">
         <h1 className="mb-8 text-h1-sm md:text-h1-md lg:text-h1 reveal-on-scroll">Duurzame initiatieven</h1>
         <p className="text-sm md:text-base reveal-on-scroll">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Hier vind je een overzicht van inspirerende duurzame initiatieven die je als foodtruckeigenaar kunt benutten. Deze initiatieven helpen je om bewuster te ondernemen, van voedselverspilling tegengaan tot duurzamer transport en verpakkingen.
         </p>
         <a href="#initiatieven" className="flex items-center justify-start mt-10 w-fit group reveal-on-scroll">
           <span className="text-xs btn-fill btn-white group-hover:bg-black group-hover:text-white">Bekijk de initiatieven</span>
@@ -45,7 +45,7 @@ export default function HeroTwo() {
 
       <div className="col-span-6 col-start-7 md:col-span-4 md:col-start-9 lg:col-span-3 lg:col-start-10 lg:mt-[-50px] rounded-3xl ">
         <div className="aspect-[2/3] rounded-3xl reveal-on-scroll shadow-lg relative z-10 before:absolute before:flex before:w-[90%] before:h-[90%] md:before:bottom-[-24px] md:before:right-[-24px] before:bottom-[-12px] before:right-[-12px] before:bg-[#ADB1FF] before:opacity-[30%] before:z-[-1] before:rounded-3xl">
-          <img src="/images/interview_anne-marie_rakhorst.jpeg" alt="Interview met Anne-Marie Rakhorst" className="object-cover object-center w-full h-full rounded-3xl" />
+          <img src="/images/trailer.jpg" className="object-cover object-center w-full h-full rounded-3xl" />
         </div>
 
       </div>

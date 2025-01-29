@@ -87,6 +87,75 @@ export default function Insights() {
                     </div>
                 </div>
         </section>
+        <section className="container relative w-full mt-[120px] md:mt-[100px] lg:mt-[180px]">
+                <div className="relative z-10 grid items-center grid-cols-12 gap-6">
+                    <div className="col-span-12 md:col-span-4 lg:col-span-4 aspect-[2/3] order-2 md:order-1">   
+                        <div className="relative z-10 before:absolute before:flex before:w-[90%] before:h-[90%] md:before:bottom-[-24px] md:before:left-[-24px] before:bottom-[-12px] before:left-[-12px] md:before:bg-[#ADB1FF] before:opacity-[30%] before:z-[-1] before:rounded-3xl reveal-on-scroll">
+                        <img src="/images/tessa.jpg" className="object-cover object-right w-full h-full rounded-3xl" />
+                        </div>
+                    </div>
+                    <div className="order-1 col-span-12 md:col-span-8 lg:col-span-7 lg:col-start-6 md:order-2">
+                        <h2 className="mb-8 md:mb-5 text-h2-sm md:text-h2-md lg:text-h2 reveal-on-scroll">Belangrijkste inzichten Tessa van Gemert</h2>
+                        <ul className="space-y-3">
+                            <li className="flex items-start gap-1 group reveal-on-scroll">
+                                <ArrowIcon bgColor="smoke" />
+                                <span>Het idee achter de website: <br/> Tijdens haar studie ondernemerschap wilde Tessa een duurzame foodtruck starten die zo min mogelijk afval produceert. Uit de praktijk leerde ze dat dit veel uitdagender is dan verwacht, vooral door veranderende duurzaamheidsregels.</span>
+                            </li>
+                            <li className="flex items-start gap-1 group reveal-on-scroll">
+                                <ArrowIcon bgColor="smoke" />
+                                <span>Relevantie van duurzaamheid: <br/>De 17 Duurzaamheidsdoelen en de CSRD benadrukken het belang van duurzaam ondernemen. Inzicht in de uitstoot van bus, producten en verpakkingen kan foodtruckeigenaren een voorsprong geven bij samenwerkingen met bedrijven en evenementen.</span>
+                            </li>
+                            <li className="flex items-start gap-1 group reveal-on-scroll">
+                                <ArrowIcon bgColor="smoke" />
+                                <span>Praktische tips voor foodtruckeigenaren: 
+                                    <ul className="mt-2 ml-4 space-y-2">
+                                        <li className="list-disc">Neem een voorbeeldfunctie: Geef klanten duurzame opties zonder iets op te dringen, bijvoorbeeld door bestek en servetten pas te geven als dat nodig is.</li>
+                                        <li className="list-disc">Zoek inspiratie buiten de branche: Door gesprekken met mensen uit andere sectoren ontstaan vaak nieuwe inzichten.</li>
+                                        <li className="list-disc">Gebruik duurzame schoonmaakmiddelen: Biologisch afbreekbare producten verminderen schadelijke stoffen.</li>
+                                        <li className="list-disc">Recycle frituurvet: Laat gebruikt vet ophalen door bedrijven zoals Green Oil Recycling om er biodiesel van te maken.</li>
+                                    </ul>
+                                </span>
+                            </li>
+                            <li className="flex items-start gap-1 group reveal-on-scroll">
+                                <ArrowIcon bgColor="smoke" />
+                                <span>De missie van de website: <br/>Samen kennis delen en leren hoe foodtrucks duurzamer kunnen worden, stap voor stap richting een betere toekomst.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+        <section className=" relative w-full mt-[120px] md:mt-[100px] lg:mt-[180px] py-[64px] md:py-[100px] bg-[#ADB1FF20]">
+                <div className="container relative z-10 grid items-center grid-cols-12 gap-6">
+                    <div className="col-span-12 md:col-span-8 lg:col-span-7 ">
+                        <h2 className="mb-8 md:mb-5 text-h2-sm md:text-h2-md lg:text-h2 reveal-on-scroll">Belangrijkste inzichten Willem Schellingerhoud</h2>
+                        <ul className="space-y-3">
+                            <li className="flex items-start gap-1 group reveal-on-scroll">
+                                <ArrowIcon bgColor="white" />
+                                <span>Wat zijn emissiezones?<br/> Emissiezones zijn afgebakende stedelijke gebieden met milieuregels die voor alle bedrijfsvoertuigen gelden, ongeacht of ze op diesel of benzine rijden.</span>
+                            </li>
+                            <li className="flex items-start gap-1 group reveal-on-scroll">
+                                <ArrowIcon bgColor="white" />
+                                <span>Landelijke richtlijnen, lokale uitvoering: <br/>De regels zijn landelijk bepaald, maar gemeentes voeren ze zelf uit. Sommige gemeentes zijn al actief, terwijl andere pas in 2026 starten.</span>
+                            </li>
+                            <li className="flex items-start gap-1 group reveal-on-scroll">
+                                <ArrowIcon bgColor="white" />
+                                <span>Praktische mogelijkheden voor ondernemers: <br/>Willem adviseert ondernemers over hun opties, zoals het aanvragen van dagontheffingen, subsidies en oplossingen voor korte en lange termijn.</span>
+                            </li>
+                            <li className="flex items-start gap-1 group reveal-on-scroll">
+                                <ArrowIcon bgColor="white" />
+                                <span>Belangrijke bronnen: <br/>Websites zoals <a href="https://logistiek010.nl/" target="_blank" className="underline">logistiek010.nl</a> en <a href="https://opwegnaarzes.nl/" target="_blank" className="underline">opwegnaarzes.nl</a> geven duidelijkheid over welke voertuigen nog toegang hebben tot emissiezones.</span>
+                            </li>
+                            <li className="flex items-start gap-1 group reveal-on-scroll">
+                                <ArrowIcon bgColor="white" />
+                                <span>Advies aan foodtruckeigenaren: <br/>Denk na over de toekomst van je voertuig, zowel op korte als lange termijn. Dit helpt om een duidelijke strategie te bepalen en voorbereid te zijn op de veranderingen.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="col-span-12 overflow-hidden md:col-span-4 lg:col-span-4 lg:col-start-9 rounded-3xl reveal-on-scroll aspect-[2/3]">   
+                        <img src="/images/willem-schellingerhoud.jpg" className="object-cover object-center w-full h-full" />
+                    </div>
+                </div>
+        </section>
     </main>
   );
 } 

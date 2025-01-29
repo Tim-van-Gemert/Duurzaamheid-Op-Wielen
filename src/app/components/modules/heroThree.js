@@ -21,7 +21,7 @@ export default function HeroThree() {
       <div className="flex flex-col col-span-12 md:col-span-6 ">
         <h1 className="mb-8 text-h1-sm md:text-h1-md lg:text-h1 reveal-on-scroll">Inzichten</h1>
         <p className="text-sm md:text-base reveal-on-scroll">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Op deze pagina vind je de belangrijkste inzichten uit de interviews met Anne-Marie Rakhorst, Jack Wong, Willem Schellingerhoud en Tessa van Gemert. Elk van hen deelt waardevolle kennis, tips en ervaringen over duurzaamheid, emissiezones en de uitdagingen en kansen voor foodtruckeigenaren.
         </p>
         <a href="#interviews" className="flex justify-start items-center w-fit mt-10 md:mt-[52px] group reveal-on-scroll">
           <span className="text-xs btn-fill btn-smoke group-hover:bg-black group-hover:text-white">Bekijk de inzichten</span>
@@ -34,10 +34,10 @@ export default function HeroThree() {
       </div>
       <div className="col-span-12 md:col-span-6 grid grid-cols-7 md:grid-cols-6 relative mt-6 md:mt-0 lg:mt-[-91px] ">
         <div className="col-span-3 col-start-5  md:col-start-4 row-start-1 md:min-w-[230px] lg:min-w-[322px]  aspect-[2/3] rounded-3xl overflow-hidden reveal-on-scroll shadow-lg">
-          <img src="/images/interview_anne-marie_rakhorst.jpeg" alt="Interview met Anne-Marie Rakhorst" className="object-cover object-center w-full h-full " />
+          <img src="/images/vroem.jpeg" alt="Interview met Anne-Marie Rakhorst" className="object-cover object-left w-full h-full " />
         </div>
         <div className="col-span-3 col-start-3 md:col-start-2 row-start-1  md:min-w-[230px] lg:min-w-[322px] relative z-10 aspect-[2/3] rounded-3xl overflow-hidden mt-20 sm:mt-32 md:mt-[140px] lg:mt-[179px] reveal-on-scroll">
-          <img src="/images/interview_vroemvroemkoffie.webp" alt="Interview met Vroemvroemkoffie" className="object-cover object-right w-full h-full" />
+          <img src="/images/truck.jpeg" alt="Interview met Vroemvroemkoffie" className="object-cover object-center w-full h-full" />
         </div>
       </div>
     </section>
