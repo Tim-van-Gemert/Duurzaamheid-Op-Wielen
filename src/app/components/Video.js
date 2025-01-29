@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 
-export default function VideoModal({ thumbnailUrl, videoUrl, title }) {
+export default function VideoModal({ thumbnailUrl, videoUrl, title, objectPosition }) {
   const [isOpen, setIsOpen] = useState(false);
 
   // Convert YouTube URL to embed format with autoplay
@@ -20,7 +20,7 @@ export default function VideoModal({ thumbnailUrl, videoUrl, title }) {
         <img 
           src={thumbnailUrl} 
           alt={title} 
-          className="object-cover w-full h-full"
+          className={`object-cover w-full h-full ${objectPosition ? `object-${objectPosition}` : 'object-center'}`}
         />
         {/* Play button overlay */}
         <div className="absolute inset-0 flex items-center justify-center transition-colors bg-black/20 hover:bg-black/30">

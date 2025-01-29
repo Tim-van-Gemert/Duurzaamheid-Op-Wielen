@@ -8,7 +8,8 @@ export default function VideoSection({
   title, 
   description,
   className = "", // Optional className prop for custom positioning
-  isReversed = false // New prop to control section layout
+  isReversed = false, // New prop to control section layout
+  objectPosition
 }) {
   return (
     <section className={`container relative w-full grid grid-cols-12 gap-6 items-center ${className}`}>
@@ -22,6 +23,7 @@ export default function VideoSection({
           thumbnailUrl={thumbnailUrl}
           videoUrl={videoUrl}
           title={title}
+          objectPosition={objectPosition}
         />
       </div>
       
