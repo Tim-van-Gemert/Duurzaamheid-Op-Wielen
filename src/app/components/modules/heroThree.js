@@ -5,13 +5,13 @@ export default function HeroThree() {
   return (
     <section className="container relative w-full grid grid-cols-12 gap-6 mt-[90px] md:mt-[100px] lg:mt-[196px] z-30 md:pb-10 lg:b-0">
 
-      <div className="absolute left-[-1000px] sm:left-[100px] z-[-10] top-[-1600px] sm:top-[-1250px] lg:top-[-1850px] inset-0 reveal-on-scroll">
+      <div className="absolute left-[-1000px] sm:left-[100px] z-[-10] top-[-1600px] sm:top-[-1250px] lg:top-[-1850px] inset-0 ">
         <svg width="2747" height="2288" viewBox="0 0 2747 2288" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2740.17 2035.7C2759.15 2085.16 2734.44 2140.64 2684.98 2159.61C1694.76 2539.53 584.056 2044.78 204.144 1054.56L9.10264 546.201C-15.2545 482.716 16.4651 411.506 79.9503 387.149L914.791 66.8487C1429.91 -130.786 2007.71 126.588 2205.35 641.708L2740.17 2035.7Z" fill="#ADB1FF" fillOpacity="0.3"/>
         </svg>
       </div>
 
-      <div className="absolute left-[-1000px] sm:left-[50px] z-[-10] top-[-1550px] sm:top-[-1250px] lg:top-[-1825px] inset-0 reveal-on-scroll">
+      <div className="absolute left-[-1000px] sm:left-[50px] z-[-10] top-[-1550px] sm:top-[-1250px] lg:top-[-1825px] inset-0 ">
         <svg width="2747" height="2288" viewBox="0 0 2747 2288" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2740.17 2035.7C2759.15 2085.16 2734.44 2140.64 2684.98 2159.61C1694.76 2539.53 584.056 2044.78 204.144 1054.56L9.10264 546.201C-15.2545 482.716 16.4651 411.506 79.9503 387.149L914.791 66.8487C1429.91 -130.786 2007.71 126.588 2205.35 641.708L2740.17 2035.7Z" fill="#ADB1FF" fillOpacity="0.1"/>
         </svg>
