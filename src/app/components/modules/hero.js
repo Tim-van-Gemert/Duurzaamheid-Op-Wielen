@@ -32,6 +32,7 @@ export default function Hero() {
         <h1 className="mb-8 text-h1-sm md:text-h1-md lg:text-h1 reveal-on-scroll">Duurzaamheid in de foodtruck sector</h1>
         <p className="text-sm md:text-base reveal-on-scroll">
             Steeds meer foodtruckeigenaren ontdekken de voordelen van duurzaam ondernemen. Of je nu net begint of al jaren onderweg bent, hier vind je inspiratie en kennis om jouw foodtruck groener te maken!
+            Bekijk ook:  <a href="https://www.duurzaamheid.nl" target="_blank" className="relative before:absolute before:bottom-0 before:w-0 before:h-[1px] before:bg-black before:transition-all hover:before:w-full hover:before:left-0 before:left-1/2 w-fit">www.duurzaamheid.nl</a> en <a href="https://www.toettoetfood.nl" target="_blank" className="relative before:absolute before:bottom-0 before:w-0 before:h-[1px] before:bg-black before:transition-all hover:before:w-full hover:before:left-0 before:left-1/2 w-fit">www.toettoetfood.nl</a>
         </p>
         <a href="#interviews" className="flex justify-start items-center w-fit mt-10 md:mt-[52px] group reveal-on-scroll">
           <span className="text-xs btn-fill btn-white group-hover:bg-black group-hover:text-white">Bekijk de interviews</span>

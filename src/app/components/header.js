@@ -12,12 +12,12 @@ export default function Header() {
             link: '/'
         },
         {
-            label: "Inzichten",
-            link: '/inzichten'
-        },
-        {
             label: "Interviews",
             link: '/#interviews'
+        },
+        {
+            label: "Inzichten",
+            link: '/inzichten'
         },
         {
             label: "Duurzame initiatieven",

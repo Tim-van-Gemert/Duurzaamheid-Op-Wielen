@@ -27,45 +27,54 @@ const fontSize = {
     lineHeight: '24px',
   }],
 
+
+  'lg': ['24px', {
+    fontFamily: 'serif',
+    fontStyle: 'sans',
+    fontWeight: '400',
+    lineHeight: '32px',
+  }],
+
+
   'h1': ['60px', {
     fontFamily: 'serif',
     fontStyle: 'normal',
-    fontWeight: '500',
+    fontWeight: '400',
     lineHeight: '60px',
   }],
 
   'h1-md': ['48px', {
     fontFamily: 'serif',
     fontStyle: 'normal',
-    fontWeight: '500',
+    fontWeight: '400',
     lineHeight: '48px',
   }],
 
   'h1-sm': ['40px', {
     fontFamily: 'serif',
     fontStyle: 'normal',
-    fontWeight: '500',
+    fontWeight: '400',
     lineHeight: '40px',
   }],
 
   'h2': ['48px', {
     fontFamily: 'serif',
     fontStyle: 'normal',
-    fontWeight: '500',
-    lineHeight: '54px',
+    fontWeight: '400',
+    lineHeight: '60px',
   }],
 
   'h2-md': ['32px', {
     fontFamily: 'serif',
     fontStyle: 'normal',
-    fontWeight: '500',
+    fontWeight: '400',
     lineHeight: '48px',
   }],
 
   'h2-sm': ['28px', {
     fontFamily: 'serif',
     fontStyle: 'normal',
-    fontWeight: '500',
+    fontWeight: '400',
     lineHeight: '32px',
   }],
 

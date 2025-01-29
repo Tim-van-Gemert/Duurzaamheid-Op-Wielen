@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function HeroTwo() {
   return (
-    <section className="container relative w-full grid grid-cols-12 gap-6 mt-[90px] md:mt-[100px] lg:mt-[196px] z-30 md:pb-10 lg:b-0 mb-[80px]">
+    <section className="container relative w-full grid grid-cols-12 gap-6 mt-[90px] md:mt-[100px] lg:mt-[196px] z-30 md:pb-10 lg:b-0 ">
       <div className="absolute left-[-700px] z-[-10] top-[-1575px] inset-0 reveal-on-scroll">
         <svg width="2869" height="1973" viewBox="0 0 2869 1973" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M2789.62 279.541C2841.77 288.885 2876.47 338.732 2867.12 390.878V390.878C2680.06 1434.84 1682.11 2129.5 638.147 1942.44L102.19 1846.4C35.2585 1834.41 -9.27782 1770.43 2.7153 1703.5L160.427 823.338C257.739 280.255 776.882 -81.1126 1319.96 16.1998L2789.62 279.541Z" fill="url(#paint0_linear_25_41)" fillOpacity="0.3"/>
@@ -28,7 +28,7 @@ export default function HeroTwo() {
       </div>
 
 
-      <div className="flex flex-col col-span-12 md:col-span-8 ">
+      <div className="flex flex-col col-span-12 md:col-span-6 ">
         <h1 className="mb-8 text-h1-sm md:text-h1-md lg:text-h1 reveal-on-scroll">Duurzame initiatieven</h1>
         <p className="text-sm md:text-base reveal-on-scroll">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -43,6 +43,13 @@ export default function HeroTwo() {
         </a>
       </div>
 
+      <div className="col-span-6 col-start-7 md:col-span-4 md:col-start-9 lg:col-span-3 lg:col-start-10 lg:mt-[-50px] rounded-3xl ">
+        <div className="aspect-[2/3] rounded-3xl reveal-on-scroll shadow-lg relative z-10 before:absolute before:flex before:w-[90%] before:h-[90%] md:before:bottom-[-24px] md:before:right-[-24px] before:bottom-[-12px] before:right-[-12px] before:bg-[#ADB1FF] before:opacity-[30%] before:z-[-1] before:rounded-3xl">
+          <img src="/images/interview_anne-marie_rakhorst.jpeg" alt="Interview met Anne-Marie Rakhorst" className="object-cover object-center w-full h-full rounded-3xl" />
+        </div>
+
+      </div>
+      
     </section>
   );
 }

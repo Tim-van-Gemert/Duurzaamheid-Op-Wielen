@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 
@@ -33,15 +33,33 @@ const slides = [
 export default function WhySlider() {
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
+  const [swiperKey, setSwiperKey] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setSwiperKey(prev => prev + 1);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
-    <section className="container relative w-full mt-[90px] md:mt-[100px] lg:mt-[220px]">
-        <div className="flex flex-col md:items-center md:flex-row md:justify-between">
-            <h2 className="mb-12 text-h2-sm md:text-h2-md lg:text-h2 reveal-on-scroll">
+    <section className="container relative w-full mt-[140px] md:mt-[100px] lg:mt-[200px] flex flex-col md:block reveal-on-scroll ">
+
+        <h2 className="flex mb-6 text-h2-sm reveal-on-scroll md:hidden">
+            Waarom verduurzamen belangrijk is
+        </h2>
+        
+        
+        <div className="flex flex-col order-2 md:items-center md:flex-row md:justify-between md:order-1">
+            <h2 className="hidden text-h2-sm md:text-h2-md lg:text-h2 reveal-on-scroll md:flex">
                 Waarom verduurzamen belangrijk is
             </h2>
         
-            <div className="flex items-center justify-end gap-2 ">
+            <div className="flex items-center justify-end gap-2 mt-4 md:mt-0 ">
                 <button className={`swiper-button-prev group reveal-on-scroll`} disabled={isBeginning}>
                     <div className={`rotate-180 btn-fill btn-smoke h-fit ${isBeginning ? 'opacity-[30%] group-hover:bg-smoke' : 'group-hover:bg-black'}`}> 
                         <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg" className='-rotate-90'>
@@ -61,11 +79,13 @@ export default function WhySlider() {
         </div>
 
 
-      <div className="relative">
+      <div className="relative order-1 md:mt-10 md:order-2">
         <Swiper
+          key={swiperKey}
           modules={[Navigation]}
           spaceBetween={24}
           slidesPerView={1}
+          autoHeight={true}
           navigation={{
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -82,10 +102,11 @@ export default function WhySlider() {
               slidesPerView: 2,
             }
           }}
+          className='h-full'
         >
           {slides.map((slide, index) => (
-            <SwiperSlide className='h-full' key={index}>
-              <div className="bg-[#ADB1FF20] p-8 rounded-3xl min-h-[300px] h-full flex flex-col reveal-on-scroll">
+            <SwiperSlide style={{ height: '100%' }} key={index}>
+              <div className="bg-[#ADB1FF20] p-6 md:p-8 rounded-3xl flex flex-col  h-full" style={{ height: '100%' }} >
                 <span className="mb-4 font-sans text-h2-sm">{slide.number}</span>
                 <p className="text-sm md:text-base">{slide.text}</p>
               </div>
