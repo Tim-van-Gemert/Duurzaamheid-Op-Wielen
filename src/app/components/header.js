@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [activeHash, setActiveHash] = useState('');
     const pathname = usePathname();
 
     const menuItems = [
@@ -29,10 +30,22 @@ export default function Header() {
         },
     ];
 
+    useEffect(() => {
+        // Only access window in useEffect (client-side)
+        const updateActiveHash = () => {
+            setActiveHash(window.location.hash);
+        };
+        
+        updateActiveHash();
+        window.addEventListener('hashchange', updateActiveHash);
+        return () => window.removeEventListener('hashchange', updateActiveHash);
+    }, []);
+
     const isActive = (link) => {
         if (link.startsWith('mailto:')) return false;
+        if (link === '/#interviews') return false;
         if (link.includes('#')) {
-            return pathname === '/' && window.location.hash === link.split('#')[1];
+            return pathname === '/' && activeHash === '#' + link.split('#')[1];
         }
         return pathname === link;
     };

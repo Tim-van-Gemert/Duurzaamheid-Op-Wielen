@@ -17,7 +17,7 @@ export default function Insights() {
         <div className="overflow-hidden"> 
             <HeroThree />
         </div>
-        <section className="container relative w-full mt-[120px] md:mt-[100px] lg:mt-[180px]">
+        <section className="container relative w-full pt-[120px] md:pt-[100px] lg:pt-[180px]" id="inzichten">
                 <div className="relative z-10 grid items-center grid-cols-12 gap-6">
                     <div className="col-span-12 md:col-span-4 lg:col-span-4 aspect-[2/3] order-2 md:order-1">   
                         <div className="relative z-10 before:absolute before:flex before:w-[90%] before:h-[90%] md:before:bottom-[-24px] md:before:left-[-24px] before:bottom-[-12px] before:left-[-12px] md:before:bg-[#ADB1FF] before:opacity-[30%] before:z-[-1] before:rounded-3xl reveal-on-scroll">

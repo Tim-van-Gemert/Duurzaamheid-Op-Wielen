@@ -23,7 +23,7 @@ export default function HeroThree() {
         <p className="text-sm md:text-base reveal-on-scroll">
             Op deze pagina vind je de belangrijkste inzichten uit de interviews met Anne-Marie Rakhorst, Jack Wong, Willem Schellingerhoud en Tessa van Gemert. Elk van hen deelt waardevolle kennis, tips en ervaringen over duurzaamheid, emissiezones en de uitdagingen en kansen voor foodtruckeigenaren.
         </p>
-        <a href="#interviews" className="flex justify-start items-center w-fit mt-10 md:mt-[52px] group reveal-on-scroll">
+        <a href="#inzichten" className="flex justify-start items-center w-fit mt-10 md:mt-[52px] group reveal-on-scroll">
           <span className="text-xs btn-fill btn-smoke group-hover:bg-black group-hover:text-white">Bekijk de inzichten</span>
           <div className="btn-fill btn-smoke h-fit group-hover:bg-black"> 
             <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">

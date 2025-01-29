@@ -1,7 +1,32 @@
 "use client"
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Hero() {
+  const [activeHash, setActiveHash] = useState('');
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const updateActiveHash = () => {
+      setActiveHash(window.location.hash);
+    };
+    
+    updateActiveHash();
+    window.addEventListener('hashchange', updateActiveHash);
+    return () => window.removeEventListener('hashchange', updateActiveHash);
+  }, []);
+
+  const isActive = (link) => {
+    if (link.startsWith('mailto:')) return false;
+    
+    // For hash links, only check on client side
+    if (link.includes('#')) {
+      return pathname === '/' && activeHash === '#' + link.split('#')[1];
+    }
+    
+    return pathname === link;
+  };
+
   return (
     <section className="container relative w-full grid grid-cols-12 gap-6 mt-[90px] md:mt-[100px] lg:mt-[196px] z-30 md:pb-10 lg:b-0">
       <div className="absolute left-[-700px] z-[-10] top-[-1550px] md:top-[-1575px] inset-0 reveal-on-scroll">
