@@ -44,7 +44,12 @@ export default function WhySlider() {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+
+    handleResize();
+  }, []
+
+);
+
 
   return (
     <section className="container relative w-full mt-[140px] md:mt-[100px] lg:mt-[200px] flex flex-col md:block reveal-on-scroll ">
