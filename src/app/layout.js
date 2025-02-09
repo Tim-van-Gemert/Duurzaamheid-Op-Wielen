@@ -20,9 +20,9 @@ export default function RootLayout({ children }) {
         <GoogleAnalytics />
         <ClientWrapper>
           <RevealOnScroll />
-          {/* <Header /> */}
+          <Header />
           {children}
-           {/* <Footer /> */}
+          <Footer />
         </ClientWrapper>
         <Analytics />
       </body>

@@ -4,7 +4,6 @@ import React from 'react';
 export default function Contact() {
   return (
     <section id="contact" className="container relative w-full grid grid-cols-12 gap-6 mt-[120px] md:mt-[140px] lg:mt-[200px] mb-[120px] reveal-on-scroll">
-      {/* Content */}
       <div className="col-span-12 text-center reveal-on-scroll">
         <h2 className="text-h2-sm md:text-h1-md lg:text-h1-md">We waarderen jouw feedback!</h2>
         <p className="max-w-2xl mx-auto mt-6 text-sm md:text-base">
@@ -22,8 +21,14 @@ export default function Contact() {
           </div>
         </a>
         </div>
-        <div className='mt-12 sm:flex sm:flex-col md:mt-10 reveal-on-scroll'>
-          <span>Heeft u vragen? stuur gerust een mailtje naar: </span><a href="mailto:tessa.vg@hotmail.com" className="text-[#ADB1FF]">tessa.vg@hotmail.com</a>
+        <div className='items-center justify-center mt-12 sm:flex sm:flex-col md:mt-10 reveal-on-scroll'>
+          <span>Heeft u vragen? stuur gerust een mailtje naar: </span>
+          <a 
+            href="mailto:tessa.vg@hotmail.com" 
+            className="text-[#ADB1FF] relative before:absolute before:bottom-0 before:w-0 before:h-[1px] before:bg-[#ADB1FF] before:transition-all hover:before:w-full hover:before:left-0 before:left-1/2 w-fit"
+          >
+            tessa.vg@hotmail.com
+          </a>
         </div>
       </div>
 

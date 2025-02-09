@@ -11,6 +11,13 @@
     @apply text-[--btn-color] text-sm bg-[--btn-background];
   }  
 
+  .btn-fill-sm {
+    @apply p-2 h-fit w-fit;
+    @apply transition-colors rounded-full;
+    @apply inline-flex items-center;
+    @apply text-[--btn-color] text-sm bg-[--btn-background];
+  }  
+
   .btn-bare {
     @apply text-[--btn-color] text-sm h-fit w-fit;
     @apply transition-colors hover:text-[--btn-hover-color];
