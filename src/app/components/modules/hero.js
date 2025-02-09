@@ -19,7 +19,6 @@ export default function Hero() {
   const isActive = (link) => {
     if (link.startsWith('mailto:')) return false;
     
-    // For hash links, only check on client side
     if (link.includes('#')) {
       return pathname === '/' && activeHash === '#' + link.split('#')[1];
     }

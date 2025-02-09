@@ -14,13 +14,11 @@ export default function InitiativesGrid() {
     return (
     <div className="container relative w-full mt-[120px] md:mt-[100px] lg:mt-[180px]">
 
-      {/* Content */}
       <div className="relative z-10 grid grid-cols-12 gap-6">
         <div className="col-span-12 md:col-span-8 lg:col-span-12">
           <h2 className="mb-6 md:mb-12 text-h2-sm md:text-h2-md lg:text-h2 reveal-on-scroll">Initiatieven</h2>
           
           <div className="space-y-8">
-            {/* Duurzaamheid & mobiliteit section */}
             <section>
               <h3 className="mb-5 font-serif text-lg font-normal md:text-h2-sm reveal-on-scroll">Duurzaamheid en mobiliteit:</h3>
               <ul className="space-y-3">
@@ -39,7 +37,6 @@ export default function InitiativesGrid() {
               </ul>
             </section>
 
-            {/* Afval en verpakkingen section */}
             <section>
               <h3 className="mb-5 font-serif text-lg font-normal md:text-h2-sm reveal-on-scroll">Afval en verpakkingen:</h3>
               <ul className="space-y-3">
@@ -58,7 +55,6 @@ export default function InitiativesGrid() {
               </ul>
             </section>
             
-            {/* Voedsel en inkoop section */}
             <section>
               <h3 className="mb-5 font-serif text-lg font-normal md:text-h2-sm reveal-on-scroll">Voedsel en inkoop:</h3>
               <ul className="space-y-3">
@@ -73,7 +69,6 @@ export default function InitiativesGrid() {
               </ul>
             </section>
 
-            {/* Duurzame boereninitiatieven section */}
             <section>
               <h3 className="mb-5 font-serif text-lg font-normal md:text-h2-sm reveal-on-scroll">Duurzame boereninitiatieven:</h3>
               <ul className="space-y-3">

@@ -6,11 +6,11 @@ export default function Home() {
   return (
     <main className="flex flex-col h-full">
       <div className="overflow-hidden"> 
-      <Hero />
+        <Hero />
       </div>
     
       <div id="interviews">
-      <VideoSection 
+        <VideoSection 
           thumbnailUrl="/images/interview_anne-marie_rakhorst.jpeg"
           videoUrl="https://www.youtube.com/watch?v=OuY0LUjMG20"
           title="Interview met Anne-Marie Rakhorst"

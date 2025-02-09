@@ -7,8 +7,8 @@ export default function VideoSection({
   videoUrl, 
   title, 
   description,
-  className = "", // Optional className prop for custom positioning
-  isReversed = false, // New prop to control section layout
+  className = "",
+  isReversed = false,
   objectPosition
 }) {
   return (

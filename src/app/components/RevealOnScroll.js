@@ -10,17 +10,14 @@ export default function RevealOnScroll() {
     };
 
     const handleIntersection = (entries) => {
-      // Reset delay for each new batch of intersecting elements
       let delay = 0;
       
-      // Filter only elements that are intersecting and not already revealed
       const elementsToReveal = entries.filter(entry => 
         entry.isIntersecting && !entry.target.classList.contains('revealed')
       );
 
       elementsToReveal.forEach(entry => {
         const isMobileMenu = entry.target.closest('.mobile-menu');
-        // Use shorter delay for mobile menu items
         const delayIncrement = isMobileMenu ? 150 : 150;
         
         setTimeout(() => {
@@ -34,7 +31,6 @@ export default function RevealOnScroll() {
 
     const observer = new IntersectionObserver(handleIntersection, observerOptions);
     
-    // Only observe elements that don't have the 'revealed' class
     const elements = document.querySelectorAll('.reveal-on-scroll:not(.revealed)');
     elements.forEach(element => observer.observe(element));
 

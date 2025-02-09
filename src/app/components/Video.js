@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 export default function VideoModal({ thumbnailUrl, videoUrl, title, objectPosition }) {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Convert YouTube URL to embed format with autoplay
   const getEmbedUrl = (url) => {
     const videoId = url.match(/(?:youtu\.be\/|youtube\.com(?:\/embed\/|\/v\/|\/watch\?v=|\/watch\?.+&v=))([\w-]{11})/);
     return videoId ? `https://www.youtube.com/embed/${videoId[1]}?autoplay=1` : url;
@@ -12,7 +11,6 @@ export default function VideoModal({ thumbnailUrl, videoUrl, title, objectPositi
 
   return (
     <div className="relative">
-      {/* Thumbnail */}
       <div 
         className="relative overflow-hidden cursor-pointer aspect-[3/2] rounded-3xl"
         onClick={() => setIsOpen(true)}
@@ -30,7 +28,6 @@ export default function VideoModal({ thumbnailUrl, videoUrl, title, objectPositi
         </div>
       </div>
 
-      {/* Modal */}
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 rounded-3xl">
           <div className="relative w-full max-w-4xl aspect-[3/2] rounded-3xl overflow-hidden">

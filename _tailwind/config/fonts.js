@@ -78,13 +78,6 @@ const fontSize = {
     lineHeight: '32px',
   }],
 
-  // 'h1-sm': ['70px', {
-  //   fontFamily: 'sans',
-  //   fontStyle: 'normal',
-  //   fontWeight: '500',
-  //   lineHeight: '77px',
-  // }],
-
 }
 
 export {

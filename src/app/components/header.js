@@ -31,7 +31,6 @@ export default function Header() {
     ];
 
     useEffect(() => {
-        // Only access window in useEffect (client-side)
         const updateActiveHash = () => {
             setActiveHash(window.location.hash);
         };
@@ -52,7 +51,6 @@ export default function Header() {
 
     return (
         <header className='absolute z-50 flex items-center justify-center w-full py-6 md:py-10 '>
-            {/* Desktop Navigation */}
             <div className="container items-center justify-start hidden w-full nav-bar:flex">
                 <ul className="relative z-10 flex items-center gap-6 w-fit">
                     {menuItems.map((item, index) => (
@@ -70,10 +68,8 @@ export default function Header() {
                 </ul>
             </div>
 
-            {/* Mobile Navigation */}
             <div className="container w-full nav-bar:hidden">
                 <div className="flex items-center justify-end">
-                    {/* Hamburger Button */}
                     <button 
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                         className="relative z-50 p-2 mr-2"
@@ -85,7 +81,6 @@ export default function Header() {
                     </button>
                 </div>
 
-                {/* Mobile Menu Overlay */}
                 <div className={`fixed inset-0 bg-white z-40 transition-transform duration-300 ease-in-out ${
                     isMenuOpen ? 'translate-x-0' : 'translate-x-full'
                 }`}>

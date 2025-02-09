@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 
-// Replace with just the core CSS
 import 'swiper/css';
 
 const swiperStyles = {
